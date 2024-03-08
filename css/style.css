@@ -180,6 +180,7 @@ main{
 }
 
 .news-container .new-box p{
+    color: black;
     font-size: 14px;
     margin-top: 5px;
 }
