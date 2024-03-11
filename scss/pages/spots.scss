@@ -1,0 +1,86 @@
+#spotsUniversity{
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 300px 300px;
+    grid-template-areas:
+        "imagef title"
+        "imagef paragraph"
+    ;
+    #firstImg{
+        grid-area: imagef;
+        padding: 4%;
+    }
+    h2{
+        color: black;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        grid-area: title;
+        font-size: 32px;
+    }
+    p{
+        color: black;
+        grid-area: paragraph;
+        text-align: center;
+        margin-right: 90px;
+    }
+}
+
+#spotsIndustrial{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 300px 70px;
+    grid-template-areas:
+        "title image"
+        "paragraph paragraph"
+    ;
+    Img{
+        grid-area: image;
+    }
+    h2{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        grid-area: title;
+        font-size: 32px;
+        text-align: center;
+        margin-left: 40px;
+    }
+    p{
+        grid-area: paragraph;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+#spotsDowntown{
+    background-color: #f46c2c;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 100px 500px;
+    grid-template-areas:
+        "title title"
+        "image paragraph"
+    ;
+    Img{
+        grid-area: image;
+        margin-left: 15%;
+    }
+    h2{
+        color: black;
+        padding: 30px;
+        grid-area: title;
+        font-size: 32px;
+        text-align: center;
+        margin-left: 40px;
+    }
+    p{
+        color: black;
+        grid-area: paragraph;
+        text-align: center;
+        padding: 10px;
+        margin-top: 200px;
+        margin-right: 15%;
+    }
+}

@@ -1,0 +1,137 @@
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title-box{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 120px;
+    padding: 5px 4%;
+    p{
+        margin: 10px 0 40px;
+        font-size: 22px;
+        color: #f46c2c;
+    }
+}
+
+#hero{
+    width: 100%;
+    height: 600px;
+    padding: 0 60px;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1{
+        font-size: 70px;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+    p{
+        font-size: 24px;
+        margin-bottom: 32px;
+    }
+    a{
+        background-color: #fff;
+        padding: 12px 24px;
+        border-radius: 16px;
+        font-weight: 500;
+        width: fit-content;
+    }
+}
+
+#bestTrick{
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2{
+        text-align: center;
+        color: black;
+        padding: 2%;
+        font-size: 62px;
+        margin-bottom: 0;
+    }
+}
+
+.videos{
+    p{
+        color: black;
+        padding: 1%;
+    }
+}
+
+#news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 45px;
+    h2{
+        color: #f46c2c;
+        font-weight: 600;
+        font-size: 62px;
+        margin-bottom: 32px;
+    }
+}
+
+.news-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .new-box{
+        padding: 15px;
+        p{
+            color: black;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        h3{
+            color: #f46c2c;
+            margin-top: 5px;
+        
+        }
+     }
+}
+
+#topUsers{
+    background-image: url(../resources/Indygrab\(topusers\).jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 60px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h2{
+        text-align: center;
+        color: #fff;
+        font-size: 62px;
+        font-weight: 600;
+    }
+    .user-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .users{
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            margin: 1%;
+            text-align: center;
+            img{
+                width: 50%;
+                margin-left: 25%;
+            }
+        }
+    }
+}

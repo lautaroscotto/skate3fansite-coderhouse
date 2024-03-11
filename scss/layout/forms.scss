@@ -1,0 +1,12 @@
+form{
+    display: flex;
+    flex-direction: column;
+    .box{
+        padding: 5px 0;
+        width: 100%;
+    }
+    .inp{
+        padding: 5px 0;
+        width: 100%;
+    }
+}
