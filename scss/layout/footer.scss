@@ -2,7 +2,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: left;
-    background-color: #f46c2c;
+    background-color: map-get($colors, terciario);
     width: 100%;
-    padding: 12px   
+    padding: 12px 
 }

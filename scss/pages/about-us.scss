@@ -6,7 +6,7 @@
         padding: 30px;
         h2{
             margin-bottom: 10px;
-            font-size: 32px;
+            font-size: map-get($font-sizes, subtitle-sm);
         }
     }
     .contact-us{
@@ -14,7 +14,7 @@
         padding: 30px;
         h2{
             margin-bottom: 10px;
-            font-size: 32px;
+            font-size: map-get($font-sizes, subtitle-sm);
         }
     }
 }

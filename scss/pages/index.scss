@@ -5,23 +5,6 @@ main{
     justify-content: space-between;
 }
 
-.title-box{
-    width: 100%;
-    height: 200px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    margin-top: 120px;
-    padding: 5px 4%;
-    p{
-        margin: 10px 0 40px;
-        font-size: 22px;
-        color: #f46c2c;
-    }
-}
-
 #hero{
     width: 100%;
     height: 600px;
@@ -31,16 +14,16 @@ main{
     flex-direction: column;
     justify-content: center;
     h1{
-        font-size: 70px;
+        font-size: map-get($font-sizes, title);
         font-weight: 600;
         margin-bottom: 12px;
     }
     p{
-        font-size: 24px;
+        font-size: map-get($font-sizes, subtitle-sm);
         margin-bottom: 32px;
     }
     a{
-        background-color: #fff;
+        background-color: map-get($colors, secundario);
         padding: 12px 24px;
         border-radius: 16px;
         font-weight: 500;
@@ -49,23 +32,23 @@ main{
 }
 
 #bestTrick{
-    background-color: #fff;
+    background-color: map-get($colors, secundario);
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     h2{
         text-align: center;
-        color: black;
+        color: map-get($colors, primario);
         padding: 2%;
-        font-size: 62px;
+        font-size: map-get($font-sizes, subtitle-md);
         margin-bottom: 0;
     }
 }
 
 .videos{
     p{
-        color: black;
+        color: map-get($colors, primario);
         padding: 1%;
     }
 }
@@ -76,9 +59,9 @@ main{
     align-items: center;
     padding: 60px 45px;
     h2{
-        color: #f46c2c;
+        color: map-get($colors, terciario);
         font-weight: 600;
-        font-size: 62px;
+        font-size: map-get($font-sizes, subtitle-md);
         margin-bottom: 32px;
     }
 }
@@ -90,12 +73,12 @@ main{
     .new-box{
         padding: 15px;
         p{
-            color: black;
-            font-size: 14px;
+            color: map-get($colors, primario);
+            font-size: map-get($font-sizes, paragraph-sm);
             margin-top: 5px;
         }
         h3{
-            color: #f46c2c;
+            color: map-get($colors, terciario);
             margin-top: 5px;
         
         }
@@ -114,8 +97,8 @@ main{
     justify-content: space-between;
     h2{
         text-align: center;
-        color: #fff;
-        font-size: 62px;
+        color: map-get($colors, secundario);
+        font-size: map-get($font-sizes, subtitle-md);
         font-weight: 600;
     }
     .user-container{

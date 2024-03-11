@@ -1,0 +1,20 @@
+
+$colors: (
+    primario: #000,
+    secundario: #fff,
+    terciario: #f46c2c,
+);
+
+$font-sizes: (
+    title: 70px,
+    subtitle-md: 60px,
+    subtitle-sm: 30px,
+    paragraph-md: 20px,
+    paragraph-sm: 15px,
+);
+
+@mixin media-query-mobile{
+    @media (max-width: 480px) {
+        @content;
+    }
+}

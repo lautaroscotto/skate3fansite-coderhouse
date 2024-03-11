@@ -6,7 +6,7 @@ header{
     width: 100%;
     padding: 1%;
     position: fixed;
-    background-color: #fff;
+    background-color: map-get($colors, secundario);
 }
 
 nav{
@@ -41,8 +41,8 @@ nav{
     border: 0;
     outline: 0;
     border-radius: 5px;
-    background: #f46c2c;
-    color: black;
+    background: map-get($colors, terciario);
+    color: map-get($colors, primario);
     font-weight: 600;
     cursor: pointer;
     width: 130px;
@@ -54,6 +54,6 @@ nav{
 
 a{
     text-decoration: none;
-    color: black;
+    color: map-get($colors, primario);
 }
 

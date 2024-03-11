@@ -54,7 +54,7 @@ nav ul li {
   outline: 0;
   border-radius: 5px;
   background: #f46c2c;
-  color: black;
+  color: #000;
   font-weight: 600;
   cursor: pointer;
   width: 130px;
@@ -66,7 +66,7 @@ nav ul li {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #000;
 }
 
 footer {
@@ -96,13 +96,6 @@ iframe {
   height: 385px;
 }
 
-main {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .title-box {
   width: 100%;
   height: 200px;
@@ -116,8 +109,15 @@ main {
 }
 .title-box p {
   margin: 10px 0 40px;
-  font-size: 22px;
+  font-size: 30px;
   color: #f46c2c;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #hero {
@@ -135,7 +135,7 @@ main {
   margin-bottom: 12px;
 }
 #hero p {
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 32px;
 }
 #hero a {
@@ -155,14 +155,14 @@ main {
 }
 #bestTrick h2 {
   text-align: center;
-  color: black;
+  color: #000;
   padding: 2%;
-  font-size: 62px;
+  font-size: 60px;
   margin-bottom: 0;
 }
 
 .videos p {
-  color: black;
+  color: #000;
   padding: 1%;
 }
 
@@ -175,7 +175,7 @@ main {
 #news h2 {
   color: #f46c2c;
   font-weight: 600;
-  font-size: 62px;
+  font-size: 60px;
   margin-bottom: 32px;
 }
 
@@ -188,8 +188,8 @@ main {
   padding: 15px;
 }
 .news-container .new-box p {
-  color: black;
-  font-size: 14px;
+  color: #000;
+  font-size: 15px;
   margin-top: 5px;
 }
 .news-container .new-box h3 {
@@ -211,7 +211,7 @@ main {
 #topUsers h2 {
   text-align: center;
   color: #fff;
-  font-size: 62px;
+  font-size: 60px;
   font-weight: 600;
 }
 #topUsers .user-container {
@@ -243,15 +243,15 @@ main {
   padding: 4%;
 }
 #spotsUniversity h2 {
-  color: black;
+  color: #000;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   grid-area: title;
-  font-size: 32px;
+  font-size: 30px;
 }
 #spotsUniversity p {
-  color: black;
+  color: #000;
   grid-area: paragraph;
   text-align: center;
   margin-right: 90px;
@@ -271,7 +271,7 @@ main {
   flex-wrap: wrap;
   align-content: center;
   grid-area: title;
-  font-size: 32px;
+  font-size: 30px;
   text-align: center;
   margin-left: 40px;
 }
@@ -293,15 +293,15 @@ main {
   margin-left: 15%;
 }
 #spotsDowntown h2 {
-  color: black;
+  color: #000;
   padding: 30px;
   grid-area: title;
-  font-size: 32px;
+  font-size: 30px;
   text-align: center;
   margin-left: 40px;
 }
 #spotsDowntown p {
-  color: black;
+  color: #000;
   grid-area: paragraph;
   text-align: center;
   padding: 10px;
@@ -327,7 +327,7 @@ main {
 }
 #contactAbout .about-us h2 {
   margin-bottom: 10px;
-  font-size: 32px;
+  font-size: 30px;
 }
 #contactAbout .contact-us {
   width: 50%;
@@ -335,7 +335,7 @@ main {
 }
 #contactAbout .contact-us h2 {
   margin-bottom: 10px;
-  font-size: 32px;
+  font-size: 30px;
 }
 
 #logCreate {
@@ -347,7 +347,7 @@ main {
   width: 50%;
   padding: 30px;
 }
-#logCreate .log-in h1 {
+#logCreate .log-in h2 {
   margin-bottom: 10px;
   font-size: 32px;
 }
@@ -355,7 +355,7 @@ main {
   width: 50%;
   padding: 30px;
 }
-#logCreate .create-account h1 {
+#logCreate .create-account h2 {
   margin-bottom: 10px;
   font-size: 32px;
 }
