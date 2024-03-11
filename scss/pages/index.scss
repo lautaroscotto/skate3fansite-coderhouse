@@ -35,11 +35,15 @@ main{
         }
     }
     a{
-        background-color: map-get($colors, secundario);
+        background-image: linear-gradient(to right, map-get($colors, secundario), map-get($colors, terciario));
+        color: map-get($colors, primario);
         padding: 12px 24px;
         border-radius: 16px;
         font-weight: 500;
         width: fit-content;
+        &:hover{
+            background: #f46c2c;
+        }
     }
 }
 

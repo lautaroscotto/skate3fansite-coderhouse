@@ -7,6 +7,10 @@
         "imagef title"
         "imagef paragraph"
     ;
+    @include media-query-mobile(){
+        display: flex;
+        flex-direction: row;
+    }
     #firstImg{
         grid-area: imagef;
         padding: 4%;
@@ -46,8 +50,10 @@
         font-size: map-get($font-sizes, subtitle-sm);
         text-align: center;
         margin-left: 40px;
+        color: map-get($colors, secundario);
     }
     p{
+        color: map-get($colors, secundario);
         grid-area: paragraph;
         text-align: center;
         padding: 10px;

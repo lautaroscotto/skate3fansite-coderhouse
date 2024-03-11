@@ -47,6 +47,20 @@ nav{
         li{
             display: inline-block;
             margin: 10px 20px;
+            &::after{
+                content: '';
+                width: 0%;
+                height: 2px;
+                background: map-get($colors, terciario);
+                display: block;
+                margin: auto;
+                transition: 0.5s;
+            }
+            &:hover{
+                &::after{
+                    width: 100%;
+                }
+            }
             @include media-query-mobile(){
                 display: flex;
                 flex-direction: column;
