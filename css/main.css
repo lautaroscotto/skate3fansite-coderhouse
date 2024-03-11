@@ -78,6 +78,24 @@ footer {
   padding: 12px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+}
+form .box {
+  padding: 5px 0;
+  width: 100%;
+}
+form .inp {
+  padding: 5px 0;
+  width: 100%;
+}
+
+iframe {
+  width: 640px;
+  height: 385px;
+}
+
 main {
   width: 100%;
   display: flex;
