@@ -1,4 +1,9 @@
 iframe{
     width: 640px; 
     height: 385px;
+    @include media-query-mobile(){
+        width: 365px;
+        height: 205px;
+        padding: 0 1%;
+    }
 }

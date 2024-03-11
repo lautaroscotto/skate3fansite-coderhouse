@@ -7,6 +7,13 @@ header{
     padding: 1%;
     position: fixed;
     background-color: map-get($colors, secundario);
+    @include media-query-mobile(){
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        height: 180px;   
+        padding: 4%; 
+    }
 }
 
 nav{
@@ -14,10 +21,18 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include media-query-mobile(){
+        display: flex;
+        flex-direction: column;
+    }
     .nav-links{
         display: flex;
         flex-wrap: wrap;
         align-content: center;
+        @include media-query-mobile(){
+            flex-direction: column;
+            height: 100px;
+        }
     }
     ul{
         list-style: none;
@@ -25,15 +40,29 @@ nav{
         text-align: right;
         padding: 20px;
         margin: 0;
+        @include media-query-mobile(){
+            text-align: center;
+            padding: 0;
+        }
         li{
             display: inline-block;
             margin: 10px 20px;
+            @include media-query-mobile(){
+                display: flex;
+                flex-direction: column;
+                font-size: 14px;
+            }
         }
     }
 }
+
 .logo{
     width: 180px;
+    @include media-query-mobile(){
+        width: 80px;
+    }
 }
+
 .btn{
     display: flex;
     align-items: center;
@@ -46,6 +75,9 @@ nav{
     font-weight: 600;
     cursor: pointer;
     width: 130px;
+    @include media-query-mobile(){
+        width: 130px;
+    }
     img{
         width: 20px;
         margin-right: 10px;

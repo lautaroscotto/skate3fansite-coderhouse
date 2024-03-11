@@ -2,9 +2,16 @@
     display: flex;
     margin-bottom: 50px;
     margin-top: 150px;
+    @include media-query-mobile(){
+        display: flex;
+        flex-direction: column;
+    }
     .log-in{
         width: 50%;
         padding: 30px;
+        @include media-query-mobile(){
+            width: 100%;
+        }
         h2{
             margin-bottom: 10px;
             font-size: 32px;
@@ -13,6 +20,9 @@
     .create-account{
         width: 50%;
         padding: 30px;
+        @include media-query-mobile(){
+            width: 100%;
+        }
         h2{
             margin-bottom: 10px;
             font-size: 32px;

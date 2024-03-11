@@ -4,5 +4,9 @@ footer{
     justify-content: left;
     background-color: map-get($colors, terciario);
     width: 100%;
-    padding: 12px 
+    padding: 12px;
+    @include media-query-mobile(){
+        background-color: map-get($colors, primario);
+        color: map-get($colors, terciario);
+    }
 }
