@@ -399,12 +399,19 @@ main {
 @media (max-width: 480px) {
   #spotsUniversity {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
   }
 }
 #spotsUniversity #firstImg {
   grid-area: imagef;
   padding: 4%;
+}
+@media (max-width: 480px) {
+  #spotsUniversity #firstImg {
+    size-adjust: 50%;
+  }
 }
 #spotsUniversity h2 {
   color: #000;
@@ -414,11 +421,22 @@ main {
   grid-area: title;
   font-size: 30px;
 }
+@media (max-width: 480px) {
+  #spotsUniversity h2 {
+    padding: 5px;
+    text-align: center;
+  }
+}
 #spotsUniversity p {
   color: #000;
   grid-area: paragraph;
   text-align: center;
   margin-right: 90px;
+}
+@media (max-width: 480px) {
+  #spotsUniversity p {
+    margin-right: 0;
+  }
 }
 
 #spotsIndustrial {
@@ -426,6 +444,14 @@ main {
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: 300px 70px;
   grid-template-areas: "title image" "paragraph paragraph";
+}
+@media (max-width: 480px) {
+  #spotsIndustrial {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
 }
 #spotsIndustrial Img {
   grid-area: image;
@@ -439,6 +465,12 @@ main {
   text-align: center;
   margin-left: 40px;
   color: #fff;
+}
+@media (max-width: 480px) {
+  #spotsIndustrial h2 {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
 #spotsIndustrial p {
   color: #fff;
@@ -454,9 +486,22 @@ main {
   grid-template-rows: 100px 500px;
   grid-template-areas: "title title" "image paragraph";
 }
+@media (max-width: 480px) {
+  #spotsDowntown {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+}
 #spotsDowntown Img {
   grid-area: image;
   margin-left: 15%;
+}
+@media (max-width: 480px) {
+  #spotsDowntown Img {
+    margin-left: 0;
+  }
 }
 #spotsDowntown h2 {
   color: #000;
@@ -466,6 +511,11 @@ main {
   text-align: center;
   margin-left: 40px;
 }
+@media (max-width: 480px) {
+  #spotsDowntown h2 {
+    margin-left: 0;
+  }
+}
 #spotsDowntown p {
   color: #000;
   grid-area: paragraph;
@@ -473,6 +523,12 @@ main {
   padding: 10px;
   margin-top: 200px;
   margin-right: 15%;
+}
+@media (max-width: 480px) {
+  #spotsDowntown p {
+    margin-top: 0;
+    margin-right: 0;
+  }
 }
 
 #newChallenges h2 {

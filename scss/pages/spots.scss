@@ -9,11 +9,16 @@
     ;
     @include media-query-mobile(){
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
     }
     #firstImg{
         grid-area: imagef;
-        padding: 4%;
+        padding: 4%;   
+        @include media-query-mobile(){
+            size-adjust: 50%;
+        }
     }
     h2{
         color: map-get($colors, primario);
@@ -22,12 +27,19 @@
         align-content: center;
         grid-area: title;
         font-size: map-get($font-sizes, subtitle-sm);
+        @include media-query-mobile(){
+            padding: 5px;
+            text-align: center;
+        }
     }
     p{
         color: map-get($colors, primario);
         grid-area: paragraph;
         text-align: center;
         margin-right: 90px;
+        @include media-query-mobile(){
+            margin-right: 0;
+        }
     }
 }
 
@@ -39,6 +51,12 @@
         "title image"
         "paragraph paragraph"
     ;
+    @include media-query-mobile(){
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
     Img{
         grid-area: image;
     }
@@ -51,6 +69,10 @@
         text-align: center;
         margin-left: 40px;
         color: map-get($colors, secundario);
+        @include media-query-mobile(){
+            margin-left: 0;
+            margin-top: 20px;
+        }
     }
     p{
         color: map-get($colors, secundario);
@@ -69,9 +91,18 @@
         "title title"
         "image paragraph"
     ;
+    @include media-query-mobile(){
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
     Img{
         grid-area: image;
         margin-left: 15%;
+        @include media-query-mobile(){
+            margin-left: 0;
+        }
     }
     h2{
         color: map-get($colors, primario);
@@ -80,6 +111,9 @@
         font-size: map-get($font-sizes, subtitle-sm);
         text-align: center;
         margin-left: 40px;
+        @include media-query-mobile(){
+            margin-left: 0;
+        }
     }
     p{
         color: map-get($colors, primario);
@@ -88,5 +122,9 @@
         padding: 10px;
         margin-top: 200px;
         margin-right: 15%;
+        @include media-query-mobile(){
+            margin-top: 0;
+            margin-right: 0;
+        }
     }
 }
