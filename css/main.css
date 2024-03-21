@@ -183,13 +183,13 @@ iframe {
     margin-top: 200px;
   }
 }
-.title-box p {
+.title-box h1 {
   margin: 10px 0 40px;
   font-size: 30px;
   color: #f46c2c;
 }
 @media (max-width: 480px) {
-  .title-box p {
+  .title-box h1 {
     font-size: 15px;
   }
 }
