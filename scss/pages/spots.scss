@@ -44,6 +44,7 @@
 }
 
 #spotsIndustrial{
+    background-color: map-get($colors, terciario);
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: 300px 70px;
@@ -68,14 +69,14 @@
         font-size: map-get($font-sizes, subtitle-sm);
         text-align: center;
         margin-left: 40px;
-        color: map-get($colors, secundario);
+        color: map-get($colors, primario);
         @include media-query-mobile(){
             margin-left: 0;
             margin-top: 20px;
         }
     }
     p{
-        color: map-get($colors, secundario);
+        color: map-get($colors, primario);
         grid-area: paragraph;
         text-align: center;
         padding: 10px;
@@ -83,7 +84,6 @@
 }
 
 #spotsDowntown{
-    background-color: map-get($colors, terciario);
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: 100px 500px;
@@ -105,7 +105,7 @@
         }
     }
     h2{
-        color: map-get($colors, primario);
+        color: map-get($colors, secundario);
         padding: 30px;
         grid-area: title;
         font-size: map-get($font-sizes, subtitle-sm);
@@ -116,7 +116,7 @@
         }
     }
     p{
-        color: map-get($colors, primario);
+        color: map-get($colors, secundario);
         grid-area: paragraph;
         text-align: center;
         padding: 10px;

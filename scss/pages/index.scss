@@ -132,7 +132,7 @@ main{
         background-image: none;
         padding: 40px;
         height: auto;
-        background-color: #f46c2c;
+        background-color: map-get($colors, primario);
     }
     h2{
         text-align: center;

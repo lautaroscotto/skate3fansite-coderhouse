@@ -1,7 +1,6 @@
 #logCreate{
     display: flex;
     margin-bottom: 50px;
-    margin-top: 150px;
     @include media-query-mobile(){
         display: flex;
         flex-direction: column;
@@ -15,6 +14,7 @@
         h2{
             margin-bottom: 10px;
             font-size: 32px;
+            color: map-get($colors, terciario);
         }
     }
     .create-account{
@@ -26,6 +26,7 @@
         h2{
             margin-bottom: 10px;
             font-size: 32px;
+            color: map-get($colors, terciario);
         }
     }
 }
